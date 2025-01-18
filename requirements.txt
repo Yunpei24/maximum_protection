@@ -1,0 +1,9 @@
+Django
+python-dotenv
+pillow
+django-crispy-forms
+crispy-tailwind
+google-cloud-dialogflow
+python-dotenv
+django-compressor
+django-tailwind

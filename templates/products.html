@@ -1,0 +1,148 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Nos Produits{% endblock %}
+
+{% block content %}
+<div class="py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h1 class="text-4xl font-bold text-center mb-16 animate__animated animate__fadeIn">Nos Produits</h1>
+        
+        <!-- Produits Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            
+            <!-- Garrett -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-all duration-300 flex flex-col">
+                <div class="aspect-w-16 aspect-h-9 bg-gray-200">
+                    <img src="{% static 'images/garrett.png' %}" alt="Garrett image" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6 flex flex-col justify-between flex-grow">
+                    <h3 class="text-xl font-bold mb-4 text-center flex-shrink-0">Garrett</h3>
+                    <ul class="space-y-2 text-gray-600 flex-grow">
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-blue-900 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            Grande sensibilité
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-blue-900 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            Réglage de la sensibilité
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-blue-900 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            Grande surface de numérisation
+                        </li>
+                    </ul>
+                    <button class="mt-6 w-full bg-blue-900 text-white py-2 rounded-lg hover:bg-blue-800 transition-colors">
+                        En savoir plus
+                    </button>
+                </div>
+            </div>
+
+            <!-- Système de contrôle par rayons X -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-all duration-300 flex flex-col">
+                <div class="aspect-w-16 aspect-h-9 bg-gray-200">
+                    <img src="{% static 'images/controler_rayonX.png' %}" alt="Controler rayon X image" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6 flex flex-col justify-between flex-grow">
+                    <h3 class="text-xl font-bold mb-4 text-center flex-shrink-0">Système professionnel de contrôle par rayons X</h3>
+                    <ul class="space-y-2 text-gray-600 flex-grow">
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-blue-900 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            Haute sécurité
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-blue-900 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            Contrôle avancé
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-blue-900 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            Usage professionnel
+                        </li>
+                    </ul>
+                    <button class="mt-6 w-full bg-blue-900 text-white py-2 rounded-lg hover:bg-blue-800 transition-colors">
+                        En savoir plus
+                    </button>
+                </div>
+            </div>
+
+            <!-- Miroir de contrôle -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-all duration-300 flex flex-col">
+                <div class="aspect-w-16 aspect-h-9 bg-gray-200">
+                    <img src="{% static 'images/mirror.png' %}" alt="Mirror image" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6 flex flex-col justify-between flex-grow">
+                    <h3 class="text-xl font-bold mb-4 text-center flex-shrink-0">Miroir de contrôle</h3>
+                    <ul class="space-y-2 text-gray-600 flex-grow">
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-blue-900 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            Inspection des véhicules
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-blue-900 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            Zones douanières
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-blue-900 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            Monté sur châssis à roulettes
+                        </li>
+                    </ul>
+                    <button class="mt-6 w-full bg-blue-900 text-white py-2 rounded-lg hover:bg-blue-800 transition-colors">
+                        En savoir plus
+                    </button>
+                </div>
+            </div>
+
+            <!-- Garrett Multi Zone -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-all duration-300 flex flex-col">
+                <div class="aspect-w-16 aspect-h-9 bg-gray-200">
+                    <img src="{% static 'images/garrett_multi.png' %}" alt="Garrett Multi Zone image" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6 flex flex-col justify-between flex-grow">
+                    <h3 class="text-xl font-bold mb-4 text-center flex-shrink-0">Garrett Multi Zone</h3>
+                    <ul class="space-y-2 text-gray-600 flex-grow">
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-blue-900 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            Grande sensibilité
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-blue-900 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            200 niveaux de sensibilité
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-blue-900 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            Compteur directionnel personnalisable
+                        </li>
+                    </ul>
+                    <button class="mt-6 w-full bg-blue-900 text-white py-2 rounded-lg hover:bg-blue-800 transition-colors">
+                        En savoir plus
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+{% endblock %}

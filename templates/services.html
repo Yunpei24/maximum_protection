@@ -1,0 +1,135 @@
+<!-- templates/services.html -->
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Nos Services{% endblock %}
+
+{% block content %}
+<div class="py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h1 class="text-4xl font-bold text-center mb-16 animate__animated animate__fadeIn">Nos Services</h1>
+        
+        <!-- Services Grid -->
+        <div class="space-y-16">
+            <!-- Sécurité des biens -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div class="order-2 md:order-1 animate__animated animate__fadeInLeft">
+                    <div class="flex items-center">
+                        <img src="{% static 'images/security_bien.png' %}" alt="Logo securité des biens" class="h-16 mr-8">
+                        <h2 class="text-2xl font-bold mb-4">Sécurité des biens</h2>
+                    </div>
+                    <p>Protection efficace et surveillance des biens mobiliers et immobiliers pour prévenir tout risque</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-blue-900 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            Surveillance 24/7
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-blue-900 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            Prévention des intrusions
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-blue-900 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            Sécurisation des espaces sensibles
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-blue-900 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            Intervention rapide en cas d'incident
+                        </li>
+                    </ul>
+                </div>
+                <div class="order-1 md:order-2 bg-gray-200 h-64 rounded-lg"></div>
+            </div>
+
+            <!-- Convoyage de fonds -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div class="bg-gray-200 h-64 rounded-lg"></div>
+                <div class="animate__animated animate__fadeInRight">
+                    <div class="flex items-center">
+                        <img src="{% static 'images/convoyage.png' %}" alt="Logo securité des biens" class="h-16 mr-8">
+                        <h2 class="text-2xl font-bold mb-4">Convoyage de fonds et de valeurs</h2>
+                    </div>
+                    <p>Transport sécurisé des fonds, d'objets de valeur et de documents sensibles.</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-blue-900 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            Sécurisation des fonds
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-blue-900 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            Protection des objets de valeur
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-blue-900 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            Confidentialités des documents sensibles
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-blue-900 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            Equipe hautement qualifiée
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-blue-900 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            Technologies avancées
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-blue-900 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            Itinéraires optimisés et planification rigoureuse
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Sécurisation institions financières -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div class="order-1 md:order-2 animate__animated animate__fadeInLeft">
+                    <div class="flex items-center">
+                        <img src="{% static 'images/institutions.png' %}" alt="Logo securité des biens" class="h-16 mr-8">
+                        <h2 class="text-2xl font-bold mb-4">Sécurité des institutions financière</h2>
+                    </div>
+                    <p>Déploiement d’agents spécialisés pour la sécurisation
+                        des banques, caisses et autres institutions financière.</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-blue-900 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            Contrôle d’accès renforcé
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-blue-900 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            Surveillance intérieure et extérieure
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-blue-900 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            Gestion des situations de crise
+                        </li>
+                    </ul>
+                </div>
+                <div class="order-1 md:order-2 bg-gray-200 h-64 rounded-lg"></div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,75 @@
+<!-- templates/home.html -->
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Accueil{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<div class="relative bg-blue-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+        <img src="{% static 'images/logo.png' %}" alt="Logo Maximum Protection" class="h-32 mr-16">
+        <div class="animate__animated animate__fadeIn"> 
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Maximum Protection</h1>
+            <p class="text-xl md:text-2xl mb-8">Votre partenaire de confiance en matière de sécurité</p>
+            <a href="{% url 'contact' %}" class="bg-white text-blue-900 px-8 py-3 rounded-lg text-lg font-semibold hover:bg-blue-100 transition-colors">
+                Contactez-nous
+            </a>
+        </div>
+    </div>
+    <div class="absolute bottom-0 right-0 w-1/2 h-full opacity-10">
+        <!-- Background pattern -->
+        <svg class="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <pattern id="hero-pattern" width="10" height="10" patternUnits="userSpaceOnUse">
+                <circle cx="5" cy="5" r="2" fill="currentColor"/>
+            </pattern>
+            <rect width="100" height="100" fill="url(#hero-pattern)"/>
+        </svg>
+    </div>
+</div>
+
+<!-- Services Preview -->
+<section class="py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center mb-12">Nos Services</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Service Card 1 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-4">Sécurité des biens</h3>
+                    <p class="text-gray-600">Protection efficace et surveillance des biens mobiliers et immobiliers pour prévenir tout risque</p>
+                </div>
+            </div>
+
+            <!-- Service Card 2 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-4">Convoyage de fonds</h3>
+                    <p class="text-gray-600">Transport sécurisé de fonds, d'objets de valeur et de documents sensibles</p>
+                </div>
+            </div>
+
+            <!-- Service Card 3 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-4">Sécurité minière</h3>
+                    <p class="text-gray-600">Expertise dans la sécurisation des sites miniers et la gestion des infrastructures de camps</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Clients Section -->
+<section class="bg-gray-100 py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center mb-12">Ils nous font confiance</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+            {% for client in clients %}
+            <div class="bg-white p-4 rounded-lg shadow text-center transform hover:scale-105 transition-transform duration-300">
+                {{ client }}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock %}
