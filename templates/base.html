@@ -13,17 +13,17 @@
     <script src="https://cdn.jsdelivr.net/npm/alpinejs-intersect@2.8.0/dist/alpine-intersect.min.js" defer></script>
     <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body class="font-sans">
     <!-- Navbar -->
-    <nav x-data="{ isOpen: false }" class="bg-blue-900 text-white">
+    <nav x-data="{ isOpen: false }" class="bg-blue-900 text-white fixed top-0 left-0 w-full z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
                 <div class="flex items-center">  <!-- Conteneur Flexbox -->
                     <img src="{% static 'images/logo.png' %}" alt="Logo Maximum Protection" class="h-8 mr-4">
                     <h1 class="text-xl font-bold">Maximum Protection</h1>
                 </div>
-                
                 
                 <!-- Desktop menu -->
                 <div class="hidden md:block">
@@ -59,6 +59,7 @@
             </div>
         </div>
     </nav>
+
 
     <!-- Content -->
     <main>
