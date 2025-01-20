@@ -10,3 +10,5 @@ python-dotenv
 django-compressor
 django-tailwind
 gunicorn
+psycopg2
+dj-database-url

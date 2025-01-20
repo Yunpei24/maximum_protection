@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 from pathlib import Path
 import os
 from dotenv import load_dotenv
+import dj_database_url
 
 # Charger les variables d'environnement
 load_dotenv()
@@ -88,15 +89,14 @@ WSGI_APPLICATION = "maximum_protection.wsgi.application"
 # Configuration de la base de données pour Render
 if 'RENDER' in os.environ:
     DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql',
-            'NAME': os.environ.get('DATABASE_NAME'),
-            'USER': os.environ.get('DATABASE_USER'),
-            'PASSWORD': os.environ.get('DATABASE_PASSWORD'),
-            'HOST': os.environ.get('DATABASE_HOST'),
-            'PORT': os.environ.get('DATABASE_PORT', '5432'),
+        "default": {
+            "ENGINE": "django.db.backends.sqlite3",
+            "NAME": BASE_DIR / "db.sqlite3",
         }
     }
+
+    database_url = os.environ.get("DATABASE_URL")
+    DATABASES["default"] = dj_database_url.parse(database_url)
 else:
     DATABASES = {
         "default": {
