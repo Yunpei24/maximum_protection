@@ -30,6 +30,33 @@
     </div>
 </div>
 
+<!-- Mot du Directeur -->
+<section class="bg-blue-900 text-white py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center mb-12">Mot du Directeur Général</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div class="order-2 md:order-1">
+                <h3 class="text-xl font-semibold mb-4">Chers partenaires,</h3>
+                <p class="mb-4">Depuis sa création, Maximum Protection s'est donnée pour mission d'être un acteur clé dans le domaine de la sécurité. Nous avons forgé notre réputation sur des prestations irréprochables et une capacité à anticiper les besoins de nos clients.</p>
+                
+                <p class="mb-4">Dans un contexte où la sécurité est devenue une priorité absolue pour les entreprises, particulièrement celles du secteur minier, nous nous engageons à offrir des services personnalisés et innovants, afin de garantir la sérénité et la pérennité de vos activités.</p>
+                
+                <p class="mb-4">Nos équipes, composées de professionnels hautement qualifiés, et nos outils technologiques avancés sont à votre disposition pour protéger vos biens les plus précieux, vos collaborateurs et vos opérations.</p>
+                
+                <p class="mb-8">Nous vous remercions pour votre confiance et sommes prêts à collaborer avec vous pour construire un partenariat solide et bénéfique.</p>
+                
+                <div class="text-right">
+                    <p class="font-bold text-xl">M. Albert BENAO</p>
+                    <p class="text-sm">Administrateur Principal</p>
+                </div>
+            </div>
+            <div class="order-1 md:order-2">
+                <img src="{% static 'images/dg_albert_benao.png' %}" alt="M. Albert BENAO" class="rounded-lg shadow-xl w-full max-w-md mx-auto">
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- Services Preview -->
 <section class="py-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -98,7 +125,8 @@
         <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
             {% for client in clients %}
             <div class="bg-white p-4 rounded-lg shadow text-center transform hover:scale-105 transition-transform duration-300">
-                {{ client }}
+                <img src="{% static client.logo_url %}" alt="{{ client.name }}" class="mx-auto h-16 w-auto">
+                <p class="mt-2 text-sm font-semibold">{{ client.name }}</p>
             </div>
             {% endfor %}
         </div>

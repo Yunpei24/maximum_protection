@@ -27,7 +27,7 @@ Including another URLconf
 #     path('chatbot/', include('maximum_protection.chatbot.urls')),
 # ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
-from django.urls import path
+from django.urls import path, include
 from .core.views import HomeView, ServicesView, ProductsView, AboutView, ContactView
 
 urlpatterns = [
@@ -36,4 +36,5 @@ urlpatterns = [
     path('products/', ProductsView.as_view(), name='products'),  # Route pour la vue Products
     path('about/', AboutView.as_view(), name='about'),  # Route pour la vue About
     path('contact/', ContactView.as_view(), name='contact'),  # Route pour la vue Contact
+    path('chatbot/', include('maximum_protection.chatbot.urls')),
 ]
