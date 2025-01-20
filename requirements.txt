@@ -4,6 +4,8 @@ pillow
 django-crispy-forms
 crispy-tailwind
 google-cloud-dialogflow
+whitenoise
 python-dotenv
 django-compressor
 django-tailwind
+gunicorn
